@@ -55,7 +55,7 @@ document.getElementById("menu_icon").onclick = () => {
 let company_title = document.querySelector(".company_title");
 let big_text_size = company_title.offsetHeight;
 window.addEventListener('scroll', function() {
-    if (header_size <= big_text_size){
+    if (header_size <= big_text_size * 1.4){
         company_title.classList.add("smaller_title");
     }
     else{

@@ -98,15 +98,49 @@ header{
 
 main{
     position: relative;
+    background: #082642;
+    background: url("/imgs/main-background.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-section.about_company{
-    color: red;
+.about_company_container{
+    display: flex;
+    flex: 1 1;
+
+    color: #e0e9f1;
     font-size: 2em;
 }
 
-section.about_company b{
+.about_company_container b{
+    color: rgb(133, 193, 216);
     font-size: 3em;
+
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about_company_container>img{
+    max-width: 50%;
+    height: auto;
+    width: auto;
+
+    align-self: center;
+}
+
+.about_company_container>p{
+    align-self: center;
+    /*
+    -webkit-transform: skew(20deg);
+        -moz-transform: skew(20deg);
+            -o-transform: skew(20deg);
+    transform: skew(20deg);
+    background: red;
+    */
+}
+
+#godzilla_img{
+    border-radius: 50%;
 }
 
 section.company_features{
