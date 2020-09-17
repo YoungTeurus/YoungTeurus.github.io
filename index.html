@@ -5,6 +5,7 @@
         <meta charset="utf-8">
         <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
         <link href="css/style.css" rel="stylesheet">
+        <link href="css/index_style.css" rel="stylesheet">
         <title>Студия DINO</title>
     </head>
     <body>
@@ -21,10 +22,10 @@
             </table>
             <nav>
                     <div id="nav_container" class="invisible">
-                        <a>Узнайте нас</a>
-                        <a>Особенности</a>
+                        <a href="#top">Обзор</a>
+                        <a href="/about_us.html">Узнайте нас</a>
                         <a>Реальные кейсы</a>
-                        <a>Свяжитесь с нами</a>
+                        <a href="/about_company.html">Свяжитесь с нами</a>
                     </div>
                 </nav>
         </header>
@@ -32,68 +33,26 @@
             <!-- Основное содержание -->
             <section class="about_company">
                 <div class="about_company_container">
-                    <img id="godzilla_img" src="imgs/godzilla.png">
-                    <p><b>Мы</b> - молодая и быстро набирающая силу на информационной арене компания, занимающаяся разработкой Web-сайтов.<br>
+                    <img id="godzilla_img" src="imgs/godzilla.png" id="top">
+                    <p><b>Мы</b> - молодая и амбициозная компания, занимающаяся разработкой Web-сайтов.<br>
                     <b>Вы</b>, наш будущий клиент, не останетесь равнодушными после общения с нами.</p>
                 </div>
             </section>
             <section class="company_features">
                 <p>Почему с нами приятно работать?</p>
                 <ul class="features_list">
-                    <li>не оставляем задачи "<span class="world_not_late">на потом</span>"</li>
-                    <li>умеем <span class="world_listen">слышать</span> наших клиентов</li>
-                    <li>делаем от <span class="word_soul">души</span> и для <span class="word_soul">души</span></li>
+                    <li><div><img class="feature_img" src="imgs/task.svg">не оставляем задачи "<span class="word_not_late">на потом</span>"</div></li>
+                    <li><div><img class="feature_img" src="imgs/chat_bubble_outline-white-18dp.svg">умеем <span class="word_listen">слышать</span> наших клиентов</div></li>
+                    <li><div><img class="feature_img" src="imgs/sentiment_satisfied_alt-white-18dp.svg">делаем от <span class="word_soul">души</span> и для <span class="word_soul">души</span></div></li>
                 </ul>
             </section>
-            <section class="photos">
-                <figure>
-                    <img src="imgs/developer.jpeg">
-                    <figcaption>Нашего сотрудника трудно найти не за работой</figcaption>
-                </figure>
-                <figure>
-                    <img src="imgs/conversation.jpg">
-                    <figcaption>Ежедневное обсуждение прогресса за круглым столом</figcaption>
-                </figure>
-                <figure>
-                    <img src="imgs/office.jpg">
-                    <figcaption>Наши сотрудники любят свой офис</figcaption>
-                </figure>
-            </section>
-            <section class="reviews">
-                <p>Отзывы наших клиентов</p>
-                <table>
-                    <thead>
-                        <tr>
-                            <th scope="col">Логотип сайта</th>
-                            <th scope="col">Логотип сайта</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Содержание отзыва</td>
-                            <td>Содержание отзыва</td>
-                        </tr>
-                    </tbody>
-                </table>
-            </section>
-            <section class="contacts">
-                <p>Как можно найти нас?</p>
-                <div class="address">Адрес</div>
-                <div class="map_container">Карта</div>
-            </section>
-            <section class="feedback">
-                <div class="form_container">
-                    <p>Остались вопросы?<br>Свяжитесь с нами!</p>
-                    <form>
-                        <label>Заготовка формы</label>
-                    </form>
-                </div>
-            </section>
+            
         </main>
         <footer>
             <!-- Подвал сайта -->
             <p class="author">Разработал Азаренко С. 2020</p>
         </footer>
     </body>
+    <script src="js/header_scroll.js"></script>
     <script src="js/script.js"></script>
 </html>

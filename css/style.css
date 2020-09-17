@@ -85,10 +85,16 @@ header{
 }
 
 #nav_container>a{
+    text-decoration: none;
     transition: flex 0.8s;
+    color: #e0e9f1;
     flex: 1 1;
     cursor: pointer;
     padding: 1em;
+}
+
+#nav_container>a:visited{
+    color: #e0e9f1;
 }
 
 #nav_container>a:hover{
@@ -130,13 +136,6 @@ main{
 
 .about_company_container>p{
     align-self: center;
-    /*
-    -webkit-transform: skew(20deg);
-        -moz-transform: skew(20deg);
-            -o-transform: skew(20deg);
-    transform: skew(20deg);
-    background: red;
-    */
 }
 
 #godzilla_img{
@@ -144,13 +143,43 @@ main{
 }
 
 section.company_features{
-    transition: all 0.3s ease-out;
     text-align: center;
+    color: #e0e9f1;
+    font-size: 2em;
+}
 
-    position: relative;
+.company_features>p{
+    font-size: 150%;
 }
 
 ul.features_list{
-    list-style-type: square;
-    list-style-position: inside;
+    list-style-type: none;
+}
+
+span.word_not_late{
+    color: #dd7646;
+}
+
+span.word_listen{
+    color: #53cca2;
+}
+
+span.word_soul{
+    color: #9c97e2;
+}
+
+.feature_img{
+    width: 15%;
+    vertical-align: middle;
+}
+
+footer{
+    position: relative;
+
+    background: url("../imgs/header_background.jpg") no-repeat;
+    background-size: cover;
+}
+
+footer p{
+    color: #fff;
 }

@@ -1,0 +1,25 @@
+h1{
+    color: #fff;
+}
+
+p{
+    color: #fff;
+}
+
+#contacts_container{
+    display: flex;
+
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#contacts_container p{
+    text-align: center;
+}
+
+.email_box{
+    padding: 20px;
+
+    color: #fff;
+    border: 5px solid #fff;
+}
